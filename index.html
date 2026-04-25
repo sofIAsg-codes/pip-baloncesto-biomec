@@ -389,6 +389,30 @@
     .con h3 { font-size:1rem; color:#fff; text-transform:uppercase; margin-bottom:.7rem; }
     .con p { font-size:.9rem; color:var(--light); margin:0; }
 
+    /* ─────────────────────────────── FOTOGRAMAS ── */
+    .foto-block {
+      display:flex; gap:1.5rem; align-items:flex-start;
+      background:var(--card); border:1px solid var(--border);
+      border-radius:var(--r); padding:1.2rem 1.4rem; margin:1.4rem 0;
+    }
+    .foto-img {
+      flex:0 0 auto; width:260px; max-width:100%;
+      border-radius:calc(var(--r) - 4px); border:1px solid var(--border);
+      object-fit:cover; display:block;
+    }
+    .foto-info { flex:1; min-width:0; }
+    .foto-tag {
+      font-family:var(--ff-d); font-size:.6rem; font-weight:700;
+      letter-spacing:.18em; text-transform:uppercase;
+      color:var(--accent); margin-bottom:.5rem;
+    }
+    .foto-title { font-family:var(--ff-d); font-size:.95rem; font-weight:700; color:#fff; margin-bottom:.4rem; }
+    .foto-desc { font-size:.85rem; color:var(--light); line-height:1.6; margin:0; }
+    @media(max-width:760px){
+      .foto-block { flex-direction:column; }
+      .foto-img { width:100%; }
+    }
+
     /* ─────────────────────────────── FOOTER ── */
     footer {
       background:var(--bg); border-top:1px solid var(--border);
@@ -584,6 +608,14 @@
       </div>
 
       <div id="tl-rodilla" class="v-panel on">
+        <div class="foto-block">
+          <img class="foto-img" src="imagenes/tiro_preparacion.jpeg" alt="Fotograma preparación — flexión de rodilla" loading="lazy">
+          <div class="foto-info">
+            <div class="foto-tag">📷 Fotograma · Kinovea</div>
+            <div class="foto-title">Fase de preparación — Flexión de rodilla</div>
+            <p class="foto-desc">Fotograma extraído del vídeo en el momento de máxima flexión de rodilla antes del despegue. El ángulo medido con la herramienta de tres puntos de Kinovea corresponde a la articulación de la rodilla del lado dominante.</p>
+          </div>
+        </div>
         <div class="chart-wrap">
           <div class="chart-leg">
             <div class="leg-i"><div class="leg-sq" style="background:var(--men)"></div>Hombres</div>
@@ -603,6 +635,14 @@
       </div>
 
       <div id="tl-codo" class="v-panel">
+        <div class="foto-block">
+          <img class="foto-img" src="imagenes/tiro_preparacion.jpeg" alt="Fotograma preparación — ángulo de codo" loading="lazy">
+          <div class="foto-info">
+            <div class="foto-tag">📷 Fotograma · Kinovea</div>
+            <div class="foto-title">Fase de preparación — Ángulo de codo</div>
+            <p class="foto-desc">El mismo fotograma de la fase de preparación permite medir el ángulo de codo del brazo de lanzamiento. La referencia bibliográfica distingue entre tiradores expertos (108,1°) y no expertos (99,5°).</p>
+          </div>
+        </div>
         <div class="chart-wrap">
           <div class="chart-leg">
             <div class="leg-i"><div class="leg-sq" style="background:var(--men)"></div>Hombres</div>
@@ -621,6 +661,14 @@
       </div>
 
       <div id="tl-hombro" class="v-panel">
+        <div class="foto-block">
+          <img class="foto-img" src="imagenes/tiro_liberacion.jpeg" alt="Fotograma liberación — ángulo de hombro" loading="lazy">
+          <div class="foto-info">
+            <div class="foto-tag">📷 Fotograma · Kinovea</div>
+            <div class="foto-title">Fase de liberación — Ángulo de hombro</div>
+            <p class="foto-desc">Fotograma del instante exacto en que el balón deja la mano. Se mide el ángulo de elevación del hombro del brazo dominante. La referencia para tiradores expertos sitúa este ángulo en 123,4° (±14°).</p>
+          </div>
+        </div>
         <div class="chart-wrap">
           <div class="chart-leg">
             <div class="leg-i"><div class="leg-sq" style="background:var(--men)"></div>Hombres</div>
@@ -638,6 +686,14 @@
       </div>
 
       <div id="tl-balon" class="v-panel">
+        <div class="foto-block">
+          <img class="foto-img" src="imagenes/tiro_salida.jpeg" alt="Fotograma salida del balón — ángulo de trayectoria" loading="lazy">
+          <div class="foto-info">
+            <div class="foto-tag">📷 Fotograma · Kinovea</div>
+            <div class="foto-title">Fase de salida — Ángulo del balón</div>
+            <p class="foto-desc">Fotograma en el que se traza la trayectoria inicial del balón justo tras la liberación. El ángulo se mide respecto a la horizontal mediante la herramienta de ángulo de Kinovea.</p>
+          </div>
+        </div>
         <div class="chart-wrap">
           <div class="chart-leg">
             <div class="leg-i"><div class="leg-sq" style="background:var(--men)"></div>Hombres</div>
@@ -662,6 +718,14 @@
       </div>
 
       <div id="sv-abd" class="v-panel on">
+        <div class="foto-block">
+          <img class="foto-img" src="imagenes/aterrizaje_frontal.jpeg" alt="Fotograma aterrizaje vista frontal — abducción de rodilla" loading="lazy">
+          <div class="foto-info">
+            <div class="foto-tag">📷 Fotograma · Kinovea</div>
+            <div class="foto-title">Contacto inicial — Abducción de rodilla (vista frontal)</div>
+            <p class="foto-desc">Vista frontal del instante de contacto con el suelo. Permite medir el ángulo de abducción de rodilla (valgo dinámico). Según Hewett et al. (2005), una diferencia superior a 8° entre hombres y mujeres es predictiva de rotura de LCA.</p>
+          </div>
+        </div>
         <div class="chart-wrap">
           <div class="chart-leg">
             <div class="leg-i"><div class="leg-sq" style="background:var(--men)"></div>Hombres</div>
@@ -680,6 +744,14 @@
       </div>
 
       <div id="sv-flex" class="v-panel">
+        <div class="foto-block">
+          <img class="foto-img" src="imagenes/aterrizaje_lateral.jpeg" alt="Fotograma aterrizaje vista lateral — flexión de rodilla" loading="lazy">
+          <div class="foto-info">
+            <div class="foto-tag">📷 Fotograma · Kinovea</div>
+            <div class="foto-title">Excursión máxima — Flexión de rodilla (vista lateral)</div>
+            <p class="foto-desc">Vista lateral en el momento de máxima flexión de rodilla tras el aterrizaje. Una menor flexión implica mayor carga sobre el LCA, especialmente si se combina con valgo dinámico.</p>
+          </div>
+        </div>
         <div class="chart-wrap">
           <div class="chart-leg">
             <div class="leg-i"><div class="leg-sq" style="background:var(--men)"></div>Hombres</div>
@@ -713,6 +785,14 @@
       </div>
 
       <div id="pp-ecodo" class="v-panel on">
+        <div class="foto-block">
+          <img class="foto-img" src="imagenes/pase_codo.jpeg" alt="Fotograma pase de pecho — extensión del codo" loading="lazy">
+          <div class="foto-info">
+            <div class="foto-tag">📷 Fotograma · Kinovea</div>
+            <div class="foto-title">Liberación — Extensión del codo</div>
+            <p class="foto-desc">Fotograma en el momento de liberación del balón. Se mide el ángulo de extensión del codo de ambos brazos. El valor ideal de referencia es 180° (extensión completa). Según Izzo &amp; Russo (2011), una mayor extensión mejora la velocidad de salida del balón.</p>
+          </div>
+        </div>
         <div class="chart-wrap">
           <div class="chart-leg">
             <div class="leg-i"><div class="leg-sq" style="background:var(--men)"></div>Hombres</div>
@@ -731,6 +811,14 @@
       </div>
 
       <div id="pp-tray" class="v-panel">
+        <div class="foto-block">
+          <img class="foto-img" src="imagenes/pase_trayectoria.jpeg" alt="Fotograma pase de pecho — trayectoria del balón" loading="lazy">
+          <div class="foto-info">
+            <div class="foto-tag">📷 Fotograma · Kinovea</div>
+            <div class="foto-title">Trayectoria inicial del balón</div>
+            <p class="foto-desc">Fotograma con la trayectoria del balón trazada sobre el vídeo. El ángulo se mide respecto a la horizontal: 180° equivale a un pase perfectamente recto. La referencia ideal para un pase de pecho eficaz es lo más próximo a 180°.</p>
+          </div>
+        </div>
         <div class="chart-wrap">
           <div class="chart-leg">
             <div class="leg-i"><div class="leg-sq" style="background:var(--men)"></div>Hombres</div>
