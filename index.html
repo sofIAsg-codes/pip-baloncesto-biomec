@@ -212,7 +212,128 @@
 
     @media(max-width:760px){ .mot-grid { grid-template-columns:1fr; gap:2rem; } }
 
+    /* ─────────────────────────────── AUTHOR PORTRAIT ── */
+    .author-card {
+      float: right;
+      margin: .2rem 0 1.4rem 1.8rem;
+      width: min(210px, 42%);
+      background: #f5f5f0;
+      border-radius: 10px;
+      box-shadow:
+        0 16px 48px rgba(0,0,0,.6),
+        0 0 0 1px rgba(224,123,30,.45),
+        4px 4px 0 0 rgba(224,123,30,.2);
+      overflow: hidden;
+      transform: rotate(1.8deg);
+      transition: transform .3s ease, box-shadow .3s ease;
+      cursor: default;
+    }
+    .author-card:hover {
+      transform: rotate(.4deg) scale(1.02);
+      box-shadow:
+        0 24px 60px rgba(0,0,0,.7),
+        0 0 0 1.5px rgba(224,123,30,.7),
+        6px 6px 0 0 rgba(224,123,30,.25);
+    }
+    .author-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .author-card-caption {
+      padding: .5rem .9rem .65rem;
+      background: #f5f5f0;
+      border-top: 2px solid var(--accent);
+      font-family: var(--ff-d);
+      font-size: .58rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: #1a1024;
+      font-weight: 700;
+      text-align: center;
+      line-height: 1.6;
+    }
+    .author-card-caption strong {
+      display: block;
+      font-size: .68rem;
+      color: #0d0a12;
+    }
+    @media(max-width:760px) {
+      .author-card {
+        float: none;
+        margin: 0 auto 1.6rem;
+        width: min(170px, 52%);
+        display: block;
+        transform: rotate(1deg);
+      }
+    }
+
     /* ─────────────────────────────── FUNDAMENTOS ── */
+
+    /* Bloques visuales (con imagen) */
+    .fund-visual {
+      margin-bottom: 3rem;
+    }
+    .fund-visual h3 {
+      font-size: clamp(1.2rem,2.5vw,1.7rem); color: #fff;
+      margin-bottom: .6rem;
+    }
+    .fund-visual .fv-ico { font-size: 1.8rem; margin-bottom: .5rem; }
+    .fund-visual p { font-size: 1rem; color: var(--light); max-width: 820px; margin-bottom: 1.2rem; }
+
+    .img-wide-wrap {
+      width: 100%;
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--r); overflow: hidden;
+      margin-top: .4rem;
+    }
+    .img-wide {
+      display: block; width: 100%; height: auto;
+      object-fit: contain;
+    }
+    .img-caption {
+      font-family: var(--ff-d); font-size: .68rem; letter-spacing: .14em;
+      text-transform: uppercase; color: var(--muted);
+      padding: .65rem 1.2rem; margin: 0;
+      border-top: 1px solid var(--border);
+    }
+
+    /* Tipos de movimiento: tabla explicativa */
+    .mov-table {
+      width: 100%; border-collapse: collapse;
+      font-family: var(--ff-d); font-size: .88rem;
+      margin-bottom: 1.2rem;
+    }
+    .mov-table th {
+      font-size: .65rem; letter-spacing: .15em; text-transform: uppercase;
+      color: var(--accent); padding: .7rem 1rem;
+      background: var(--card2); border-bottom: 1px solid var(--border);
+      text-align: left;
+    }
+    .mov-table td {
+      padding: .75rem 1rem; color: var(--light);
+      border-bottom: 1px solid rgba(255,255,255,.04);
+      vertical-align: top; line-height: 1.5;
+    }
+    .mov-table tr:last-child td { border-bottom: none; }
+    .mov-table tr:hover td { background: var(--acc-dim); }
+    .mov-table .mov-name { color: #fff; font-weight: 700; letter-spacing: .06em; }
+
+    /* Separador visual / textual */
+    .section-divider {
+      display: flex; align-items: center; gap: 1.2rem;
+      margin: 3.5rem 0 3rem;
+    }
+    .section-divider::before,
+    .section-divider::after {
+      content: ''; flex: 1; height: 1px; background: var(--border);
+    }
+    .section-divider span {
+      font-family: var(--ff-d); font-size: .65rem; font-weight: 700;
+      letter-spacing: .22em; text-transform: uppercase;
+      color: var(--muted); white-space: nowrap;
+    }
+
     .concepts { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.4rem; margin-bottom:3.5rem; }
     .cc {
       background:var(--card); border:1px solid var(--border);
@@ -425,7 +546,7 @@
 <nav>
   <div class="nav-logo"><span class="nav-ball">🏀</span> Biomecánica</div>
   <ul class="nav-links">
-    <li><a href="#motivacion">Motivación</a></li>
+    <li><a href="#introduccion">Introducción</a></li>
     <li><a href="#fundamentos">Fundamentos</a></li>
     <li><a href="#experimento">Experimento</a></li>
     <li><a href="#resultados">Resultados</a></li>
@@ -457,19 +578,20 @@
 </section>
 
 <!-- ══════════════════ MOTIVACIÓN ══════════════════ -->
-<section id="motivacion" class="bg-alt">
+<section id="introduccion" class="bg-alt">
   <div class="container">
     <div class="sec-head reveal">
       <div class="sec-label">01 · Por qué este proyecto</div>
-      <h2>Motivación y Objetivo</h2>
+      <h2>Introducción</h2>
     </div>
     <div class="mot-grid">
       <div class="mot-text reveal">
-        <p>Siempre he practicado varios deportes, pero el que más me ha gustado ha sido el baloncesto. Quería unir el deporte con la ciencia, y me interesan especialmente las matemáticas, la física y la anatomía.</p>
-        <div class="blockquote">
-          "Fue entonces cuando descubrí la biomecánica: una disciplina que aplica conceptos de la física al movimiento del cuerpo humano."
+        <div class="author-card">
+          <img src="imagenes/sofia.png" alt="Sofía Santos García" />
         </div>
-        <p>A partir de ahí fui concretando el tema hasta centrarme en el análisis biomecánico de gestos del baloncesto, aplicando la teoría a algo real y cercano a mí.</p>
+        <p>Esta página web recoge los resultados de mi proyecto de investigación personal de primero de bachillerato. El tema que elegí es la biomecánica del baloncesto, un deporte que practico y que me generó la curiosidad de saber si podía analizarlo de forma científica.</p>
+        <p>La idea principal es estudiar algunos gestos técnicos del baloncesto midiendo variables como los ángulos articulares y comparando los datos obtenidos con referencias bibliográficas para detectar posibles errores técnicos o riesgos de lesión.</p>
+        <p>Para ello, diseñé y realicé un experimento con jugadores reales cuyos resultados y conclusiones se muestran en esta página.</p>
         <div class="obj-box">
           <h4>🎯 Objetivo del Proyecto</h4>
           <p>Analizar de forma cuantitativa y cualitativa los movimientos en gestos específicos del baloncesto para identificar errores técnicos, valorar el riesgo de lesión y proponer recomendaciones de mejora.</p>
@@ -495,13 +617,81 @@
       <p>Conceptos clave de física y anatomía aplicados al análisis del movimiento deportivo.</p>
     </div>
 
+    <!-- ── BLOQUE VISUAL 1: Planos y Ejes ── -->
+    <div class="fund-visual reveal">
+      <div class="fv-ico">🔄</div>
+      <h3>Planos y Ejes de Movimiento</h3>
+      <p>El cuerpo humano se analiza en tres <strong>planos</strong> (sagital, frontal y transversal) y tres <strong>ejes</strong> perpendiculares entre sí (X, Y, Z). Todo movimiento articular ocurre como una rotación alrededor de un eje perpendicular al plano de movimiento correspondiente.</p>
+      <div class="img-wide-wrap">
+        <img src="imagenes/planos_ejes_movimiento.png" alt="Planos y ejes de movimiento del cuerpo humano" class="img-wide" />
+        <p class="img-caption">Figura 1 · Planos y ejes de movimiento del cuerpo humano</p>
+      </div>
+    </div>
+
+    <!-- ── BLOQUE VISUAL 2: Tipos de Movimiento (nuevo) ── -->
+    <div class="fund-visual reveal">
+      <div class="fv-ico">↕️</div>
+      <h3>Tipos de Movimiento</h3>
+      <p>Los movimientos articulares reciben nombres específicos según el <strong>eje</strong> alrededor del cual giran y el <strong>plano</strong> en que se producen. Conocer esta clasificación es fundamental para identificar y describir con precisión cualquier gesto deportivo.</p>
+      <table class="mov-table">
+        <thead>
+          <tr>
+            <th>Eje de rotación</th>
+            <th>Plano de movimiento</th>
+            <th>Tipos de movimiento</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="mov-name">Eje transversal</td>
+            <td>Plano sagital</td>
+            <td><strong>Flexión</strong> y <strong>extensión</strong></td>
+          </tr>
+          <tr>
+            <td class="mov-name">Eje anteroposterior</td>
+            <td>Plano coronal (frontal)</td>
+            <td><strong>Abducción</strong> y <strong>aducción</strong></td>
+          </tr>
+          <tr>
+            <td class="mov-name">Eje longitudinal</td>
+            <td>Plano transversal</td>
+            <td><strong>Rotación medial</strong> y <strong>rotación lateral</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="img-wide-wrap">
+        <img src="imagenes/tipos_movimientos.png" alt="Tipos de movimientos articulares: flexión, extensión, abducción, aducción, rotación" class="img-wide" />
+        <p class="img-caption">Figura 2 · Clasificación de los movimientos articulares según eje y plano</p>
+      </div>
+    </div>
+
+    <!-- ── BLOQUE VISUAL 3: Contracciones Musculares ── -->
+    <div class="fund-visual reveal">
+      <div class="fv-ico">💪</div>
+      <h3>Contracciones Musculares</h3>
+      <p>Los músculos pueden contraerse de tres formas distintas según la relación entre la tensión generada y el cambio de longitud del músculo. En el baloncesto, los tres tipos se combinan constantemente a lo largo de cada gesto técnico.</p>
+      <ul style="color:var(--light);font-size:1rem;margin:.4rem 0 1.2rem 1.2rem;display:flex;flex-direction:column;gap:.5rem;">
+        <li><strong>Concéntrica:</strong> el músculo se acorta generando movimiento propulsivo (fase de impulso en el salto).</li>
+        <li><strong>Excéntrica:</strong> el músculo se alarga para frenar y controlar el movimiento (amortiguación en el aterrizaje).</li>
+        <li><strong>Isométrica:</strong> tensión sin cambio de longitud, para estabilizar posturas (tronco en el tiro libre).</li>
+      </ul>
+      <div class="img-wide-wrap">
+        <img src="imagenes/tipos_contracción.png" alt="Tipos de contracciones musculares: concéntrica, excéntrica e isométrica" class="img-wide" />
+        <p class="img-caption">Figura 3 · Tipos de contracción muscular</p>
+      </div>
+    </div>
+
+    <!-- ── SEPARADOR ── -->
+    <div class="section-divider reveal">
+      <span>Conceptos físicos y mecánicos</span>
+    </div>
+
+    <!-- ── TARJETAS TEXTUALES ── -->
     <div class="concepts">
-      <div class="cc reveal"><div class="cc-ico">🔄</div><h3>Planos y ejes de movimiento</h3><p>El cuerpo se analiza en tres planos (sagital, frontal, transversal) y tres ejes (X, Y, Z). Todo movimiento articular ocurre como una rotación alrededor de un eje perpendicular al plano de movimiento.</p></div>
-      <div class="cc reveal d1"><div class="cc-ico">💪</div><h3>Contracciones musculares</h3><p><strong>Concéntrica:</strong> el músculo se acorta y genera movimiento propulsivo. <strong>Excéntrica:</strong> se alarga para frenar y controlar. <strong>Isométrica:</strong> tensión sin cambio de longitud para estabilizar posturas.</p></div>
-      <div class="cc reveal d2"><div class="cc-ico">⚖️</div><h3>Fuerza y Torque</h3><p>Las articulaciones actúan como ejes de rotación. El torque (T = F × brazo de momento) es la fuerza de giro muscular. La alineación corporal determina la dirección del vector fuerza y la precisión del gesto.</p></div>
-      <div class="cc reveal"><div class="cc-ico">🎯</div><h3>Centro de gravedad</h3><p>Punto hipotético donde se concentra toda la masa corporal. Para el equilibrio, la línea de gravedad debe caer dentro de la base de apoyo. La estabilidad aumenta con el centro de gravedad más bajo.</p></div>
-      <div class="cc reveal d1"><div class="cc-ico">🌀</div><h3>Efecto Magnus y backspin</h3><p>Un balón en rotación genera diferencias de presión aerodinámica que desvían su trayectoria. El <em>backspin</em> (giro hacia atrás) produce sustentación, estabiliza el vuelo y mejora el rebote al tocar el aro.</p></div>
-      <div class="cc reveal d2"><div class="cc-ico">⛓️</div><h3>Cadena cinética</h3><p>La energía en el tiro libre se transfiere en secuencia proximal-distal: de los pies al tronco y hasta la muñeca. Por eso es crucial implicar todo el cuerpo en el lanzamiento, no solo el brazo.</p></div>
+      <div class="cc reveal"><div class="cc-ico">⚖️</div><h3>Fuerza y Torque</h3><p>Las articulaciones actúan como ejes de rotación. El torque (T = F × brazo de momento) es la fuerza de giro muscular. La alineación corporal determina la dirección del vector fuerza y la precisión del gesto.</p></div>
+      <div class="cc reveal d1"><div class="cc-ico">🎯</div><h3>Centro de gravedad</h3><p>Punto hipotético donde se concentra toda la masa corporal. Para el equilibrio, la línea de gravedad debe caer dentro de la base de apoyo. La estabilidad aumenta con el centro de gravedad más bajo.</p></div>
+      <div class="cc reveal d2"><div class="cc-ico">🌀</div><h3>Efecto Magnus y backspin</h3><p>Un balón en rotación genera diferencias de presión aerodinámica que desvían su trayectoria. El <em>backspin</em> (giro hacia atrás) produce sustentación, estabiliza el vuelo y mejora el rebote al tocar el aro.</p></div>
+      <div class="cc reveal"><div class="cc-ico">⛓️</div><h3>Cadena cinética</h3><p>La energía en el tiro libre se transfiere en secuencia proximal-distal: de los pies al tronco y hasta la muñeca. Por eso es crucial implicar todo el cuerpo en el lanzamiento, no solo el brazo.</p></div>
     </div>
 
     <div class="sec-head reveal" style="margin-bottom:1.4rem;">
