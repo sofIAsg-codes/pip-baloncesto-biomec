@@ -1,5 +1,5 @@
-# pip-baloncesto-biomec
 **Proyecto de investigación personal**
+# Biomecánica del baloncesto
 
 Análisis cuantitativo de gestos técnicos mediante vídeo para mejorar la técnica y prevenir lesiones.
 
