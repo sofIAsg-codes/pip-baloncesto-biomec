@@ -589,7 +589,7 @@
         <div class="author-card">
           <img src="imagenes/sofia.png" alt="Sofía Santos García" />
         </div>
-        <p>Esta página web recoge los resultados de mi proyecto de investigación personal de primero de bachillerato del colegio Jesús y María. El tema que elegí es la biomecánica del baloncesto, un deporte que practico y que me generó la curiosidad de saber si podía analizarlo de forma científica.</p>
+        <p>Esta página web recoge los resultados de mi proyecto de investigación personal de primero de bachillerato. El tema que elegí es la biomecánica del baloncesto, un deporte que practico y que me generó la curiosidad de saber si podía analizarlo de forma científica.</p>
         <p>La idea principal es estudiar algunos gestos técnicos del baloncesto midiendo variables como los ángulos articulares y comparando los datos obtenidos con referencias bibliográficas para detectar posibles errores técnicos o riesgos de lesión.</p>
         <p>Para ello, diseñé y realicé un experimento con jugadores reales cuyos resultados y conclusiones se muestran en esta página.</p>
         <div class="obj-box">
@@ -736,7 +736,7 @@
           <div class="hyp-grid" style="grid-template-columns:1fr; gap:.8rem; margin-top:.5rem;">
             <div class="hyp"><div class="hyp-ico">🏀</div><p>Los jugadores presentarán valores cercanos a los de referencia, con variaciones individuales.</p></div>
             <div class="hyp"><div class="hyp-ico">📐</div><p>Las desviaciones de los rangos óptimos corresponderán a errores técnicos identificables.</p></div>
-            <div class="hyp"><div class="hyp-ico">⚠️</div><p>Varias jugadoras superarán el umbral de 8° de abducción adicional de rodilla predictivo de rotura de LCA (Hewett et al., 2005).</p></div>
+            <div class="hyp"><div class="hyp-ico">⚠️</div><p>Las jugadoras muestran valores de valgo de rodilla mayores que los hombres, por lo que tienen mayor riesgo de lesión de LCA.</p></div>
           </div>
         </div>
       </div>
@@ -758,7 +758,7 @@
           <div class="ref-row">
             <div class="ref-item"><div class="ref-gesture">Tiro Libre</div><div class="ref-cite">Cabarkapa et al. (2021) — sensores inerciales en 17 jugadores expertos y no expertos.</div></div>
             <div class="ref-item"><div class="ref-gesture">Pase de Pecho</div><div class="ref-cite">Izzo &amp; Russo (2011) — análisis biomecánico de 150 partidos (NBA, NCAA, Liga italiana).</div></div>
-            <div class="ref-item"><div class="ref-gesture">Salto / LCA</div><div class="ref-cite">Hewett et al. (2005) y Liang (2022) — 205 deportistas femeninas seguidas prospectivamente.</div></div>
+            <div class="ref-item"><div class="ref-gesture">Salto / LCA</div><div class="ref-cite">Chen et al. (2022) — análisis biomecánico que destaca que una flexión de rodilla mayor a 60° reduce la carga sobre el LCA.</div></div>
           </div>
         </div>
       </div>
@@ -824,15 +824,15 @@
           <div class="foto-info">
             <div class="foto-tag">📷 Fotograma · Kinovea</div>
             <div class="foto-title">Fase de preparación — Ángulo de codo</div>
-            <p class="foto-desc">El mismo fotograma de la fase de preparación permite medir el ángulo de codo del brazo de lanzamiento. La referencia bibliográfica distingue entre tiradores expertos (108,1°) y no expertos (99,5°).</p>
+            <p class="foto-desc">El mismo fotograma de la fase de preparación permite medir el ángulo de codo del brazo de lanzamiento. La referencia bibliográfica distingue entre tiradores expertos (71,9°) y no expertos (80,5°).</p>
           </div>
         </div>
         <div class="chart-wrap">
           <div class="chart-leg">
             <div class="leg-i"><div class="leg-sq" style="background:var(--men)"></div>Hombres</div>
             <div class="leg-i"><div class="leg-sq" style="background:var(--women)"></div>Mujeres</div>
-            <div class="leg-i"><div class="leg-ln" style="border-color:rgba(255,255,255,.55)"></div>Experto (108,1°)</div>
-            <div class="leg-i"><div class="leg-ln" style="border-color:rgba(255,255,255,.25)"></div>No Experto (99,5°)</div>
+            <div class="leg-i"><div class="leg-ln" style="border-color:rgba(255,255,255,.55)"></div>Experto (71,9°)</div>
+            <div class="leg-i"><div class="leg-ln" style="border-color:rgba(255,255,255,.25)"></div>No Experto (80,5°)</div>
           </div>
           <div class="chart-box"><canvas id="c-tl-codo"></canvas></div>
           <div class="chart-kpis">
@@ -841,7 +841,7 @@
             <div class="ck"><div class="ck-n" style="color:var(--women)">77°</div><div class="ck-l">Media mujeres</div></div>
           </div>
         </div>
-        <p class="note">Los hombres (108°) alcanzan el nivel experto en la posición del codo. Las mujeres (77°) quedan por debajo del nivel no experto, lo que indica una posición de codo menos óptima en la preparación. Samantha (50°) es la más alejada del valor de referencia. Carmen (101°) es la mujer más cercana al nivel experto.</p>
+        <p class="note">Los hombres tienen una media de 108º muy alejados de la referencia porque tienden a colocar el balón muy bajo en el inicio del tiro, mientras que en las mujeres es de 77º. Lara (70°) es la mujer más cercana al nivel experto.</p>
       </div>
 
       <div id="tl-hombro" class="v-panel">
@@ -866,7 +866,7 @@
             <div class="ck"><div class="ck-n" style="color:var(--women)">134°</div><div class="ck-l">Media mujeres</div></div>
           </div>
         </div>
-        <p class="note">El ángulo de hombro en la liberación es la variable más homogénea del grupo. Todos los participantes se acercan a los valores de referencia, y las diferencias entre hombres y mujeres son pequeñas — dentro de la desviación típica del estudio de referencia (±14–15°).</p>
+        <p class="note">El ángulo de hombro en la liberación es la variable más homogénea del grupo con diferencias entre hombres y mujeres pequeñas, dentro de la desviación típica del estudio de referencia (±14–15°).</p>
       </div>
 
       <div id="tl-balon" class="v-panel">
@@ -907,7 +907,7 @@
           <div class="foto-info">
             <div class="foto-tag">📷 Fotograma · Kinovea</div>
             <div class="foto-title">Contacto inicial — Abducción de rodilla (vista frontal)</div>
-            <p class="foto-desc">Vista frontal del instante de contacto con el suelo. Permite medir el ángulo de abducción de rodilla (valgo dinámico). Según Hewett et al. (2005), una diferencia superior a 8° entre hombres y mujeres es predictiva de rotura de LCA.</p>
+            <p class="foto-desc">Vista frontal del instante de contacto con el suelo. Permite medir el ángulo de abducción de rodilla (valgo dinámico). Según Chen et al. (2022) cuanto menor sea el ánngulo (alejándonos de la alineación completa de la pierna a 180º) mayor riesgo de rotura de LCA.</p>
           </div>
         </div>
         <div class="chart-wrap">
@@ -924,7 +924,7 @@
             <div class="ck"><div class="ck-n" style="color:var(--danger)">12°</div><div class="ck-l">Diferencia H/M (umbral: 8°)</div></div>
           </div>
         </div>
-        <p class="note">⚠️ <strong>Menor ángulo = mayor valgo de rodilla = mayor riesgo de LCA.</strong> Las mujeres muestran 12° más de abducción que los hombres, superando el umbral de 8° señalado por Hewett et al. (2005) como predictivo de rotura. Lara (154°) y Carmen (155°) presentan el mayor valgo del grupo.</p>
+        <p class="note">⚠️ <strong>Menor ángulo frontal = mayor desviación respecto a la alineación de rodilla = mayor valgo dinámico.</strong> La media del grupo fue de 168°, con mayor valgo en mujeres (164°) que en hombres (176°). Las mujeres muestran 12° más de abducción que los hombres. Lara (154°) y Carmen (155°) presentan el mayor valgo del grupo.</p>
       </div>
 
       <div id="sv-flex" class="v-panel">
@@ -933,7 +933,7 @@
           <div class="foto-info">
             <div class="foto-tag">📷 Fotograma · Kinovea</div>
             <div class="foto-title">Excursión máxima — Flexión de rodilla (vista lateral)</div>
-            <p class="foto-desc">Vista lateral en el momento de máxima flexión de rodilla tras el aterrizaje. Una menor flexión implica mayor carga sobre el LCA, especialmente si se combina con valgo dinámico.</p>
+            <p class="foto-desc">Vista lateral en el momento de máxima excursión de rodilla tras el aterrizaje. Se mide el ángulo cadera–rodilla–tobillo: un ángulo menor indica mayor flexión y mejor amortiguación; un ángulo mayor (rodilla menos flexionada) implica mayor carga sobre el LCA.</p>
           </div>
         </div>
         <div class="chart-wrap">
@@ -948,14 +948,16 @@
             <div class="ck"><div class="ck-n" style="color:var(--women)">104°</div><div class="ck-l">Media mujeres</div></div>
           </div>
         </div>
-        <p class="note">Las mujeres muestran 10° menos de flexión al aterrizar que los hombres — exactamente la diferencia que la bibliografía asocia con mayor riesgo de rotura del LCA. Angela (95°) y Lara (91°) son las que presentan menor flexión y, combinado con su valgo, el mayor riesgo del grupo.</p>
+        <p class="note">Las mujeres muestran 10° más de flexión al aterrizar que los hombres (media 104° vs 114°): al medir el ángulo cadera–rodilla–tobillo, un valor menor equivale a mayor flexión y mejor amortiguación, resultado favorable en esta variable. Sara (122,7°) es la jugadora con menor flexión relativa del grupo y la única en riesgo moderado por esta variable. Angela (95°) y Lara (91°) presentan la mayor flexión, lo que actúa como factor protector que compensa parcialmente su riesgo por valgo frontal.</p>
       </div>
 
       <!-- Risk cards -->
       <div class="risk-wrap reveal">
         <div class="risk-head">
           <h3>🛡️ Evaluación de riesgo individual — Aterrizaje</h3>
-          <p>Solo jugadoras (el riesgo de LCA es significativamente mayor en mujeres según la bibliografía).</p>
+          <p>Solo jugadoras (el riesgo de LCA es significativamente mayor en mujeres según la bibliografía).<br>
+          <span style="color:var(--ok)">■</span> <strong style="color:var(--light)">Abducción frontal:</strong> ≥ 170° bajo · 160–169° moderado · &lt; 160° alto &nbsp;|&nbsp;
+          <span style="color:var(--ok)">■</span> <strong style="color:var(--light)">Flexión máxima (ángulo suplementario):</strong> ≤ 120° bajo · 121–130° moderado · &gt; 130° alto</p>
         </div>
         <div class="risk-grid" id="risk-cards"></div>
       </div>
@@ -1034,12 +1036,12 @@
       <div class="con reveal">
         <div class="con-tag">Tiro libre</div>
         <h3>Valores próximos al nivel experto</h3>
-        <p>La media del grupo en la flexión de rodilla y el ángulo de hombro coincide con tiradores expertos. La mayor diferencia entre sexos aparece en el codo: los hombres alcanzan el nivel experto mientras que la mayoría de mujeres queda por debajo del nivel no experto.</p>
+        <p>La media del grupo en la flexión de rodilla y el ángulo de hombro coincide con tiradores expertos. La mayor diferencia entre sexos aparece en el codo: las mujeres alcanzan valores próximos al nivel experto (media 77°, referencia 71,9°), mientras que los hombres quedan muy por encima incluso del umbral no experto (media 108°), tendiendo a colocar el balón demasiado bajo en la fase de preparación.</p>
       </div>
       <div class="con reveal d1">
         <div class="con-tag">Salto vertical</div>
         <h3>Mayor riesgo de LCA en mujeres</h3>
-        <p>Las mujeres presentan 12° más de abducción de rodilla al aterrizar (superando el umbral de 8°) y 10° menos de flexión que los hombres. Esta combinación de valgo y menor amortiguación es coherente con la mayor prevalencia de lesiones de LCA documentada en el deporte femenino.</p>
+        <p>Las mujeres presentan 12° más de abducción de rodilla al aterrizar y 10° más de flexión que los hombres (ángulo menor = mayor amortiguación): en la variable de flexión, la respuesta femenina es favorable. El factor de riesgo dominante es el <strong>valgo dinámico frontal</strong>, que sitúa a dos jugadoras en riesgo alto y a otras dos en riesgo moderado. Solo una jugadora alcanza riesgo moderado por flexión, siendo el valgo el factor determinante del riesgo de LCA en el grupo, coherente con la mayor prevalencia de esta lesión en el deporte femenino.</p>
       </div>
       <div class="con reveal d2">
         <div class="con-tag">Pase de pecho</div>
@@ -1158,7 +1160,7 @@ function buildActiveCharts() {
   if (document.getElementById('panel-tl').classList.contains('on')) {
     const vp = document.querySelector('#panel-tl .v-panel.on');
     if (vp && vp.id==='tl-rodilla') buildChart('c-tl-rodilla', DATA.tl.rodilla, [108.5,117.9],['Experto (108,5°)','No Experto (117,9°)']);
-    if (vp && vp.id==='tl-codo')    buildChart('c-tl-codo',    DATA.tl.codo,    [108.1,99.5], ['Experto (108,1°)','No Experto (99,5°)']);
+    if (vp && vp.id==='tl-codo')    buildChart('c-tl-codo',    DATA.tl.codo,    [71.9,80.5], ['Experto (71,9°)','No Experto (80,5°)']);
     if (vp && vp.id==='tl-hombro')  buildChart('c-tl-hombro',  DATA.tl.hombro,  [123.4],      ['Experto (123,4°)']);
     if (vp && vp.id==='tl-balon')   buildChart('c-tl-balon',   DATA.tl.balon);
   }
@@ -1205,34 +1207,49 @@ function buildRiskCards() {
     const abd = DATA.sv.abd[i];
     const flx = DATA.sv.flex[i];
 
-    // Abduction: <162 HIGH, 162-170 MEDIUM, >170 LOW
-    const aRisk = abd < 162 ? 'bad' : abd < 170 ? 'warn' : 'ok';
-    const aLabel = abd < 162 ? '⚠️ Alto riesgo' : abd < 170 ? '⚡ Riesgo moderado' : '✅ Bajo riesgo';
-    const aColor = aRisk==='bad' ? 'var(--danger)' : aRisk==='warn' ? 'var(--warn)' : 'var(--ok)';
+    // Abducción frontal: ≥170° bajo, 160–169° moderado, <160° alto
+    // (menor ángulo = mayor valgo dinámico = mayor riesgo)
+    const aRisk  = abd >= 170 ? 'ok' : abd >= 160 ? 'warn' : 'bad';
+    const aLabel = aRisk === 'bad' ? '⚠️ Alto — valgo dinámico'
+                 : aRisk === 'warn' ? '⚡ Moderado'
+                 : '✅ Bajo riesgo';
+    const aColor = aRisk === 'bad' ? 'var(--danger)'
+                 : aRisk === 'warn' ? 'var(--warn)'
+                 : 'var(--ok)';
 
-    // Flexion: <97 HIGH, 97-112 MEDIUM, >112 LOW
-    const fRisk = flx < 97 ? 'bad' : flx < 112 ? 'warn' : 'ok';
-    const fLabel = flx < 97 ? '⚠️ Preocupante' : flx < 112 ? '⚡ Moderado' : '✅ Correcto';
-    const fColor = fRisk==='bad' ? 'var(--danger)' : fRisk==='warn' ? 'var(--warn)' : 'var(--ok)';
+    // Flexión máxima (ángulo suplementario): ≤120° bajo, 121–130° moderado, >130° alto
+    // (ángulo suplementario ≤120° ≈ flexión biomecánica ≥60°, referencia favorable)
+    const fRisk  = flx <= 120 ? 'ok' : flx <= 130 ? 'warn' : 'bad';
+    const fLabel = fRisk === 'bad' ? '⚠️ Flexión insuficiente'
+                 : fRisk === 'warn' ? '⚡ Moderado'
+                 : '✅ Bajo riesgo';
+    const fColor = fRisk === 'bad' ? 'var(--danger)'
+                 : fRisk === 'warn' ? 'var(--warn)'
+                 : 'var(--ok)';
 
-    const score = (aRisk==='bad'?2:aRisk==='warn'?1:0) + (fRisk==='bad'?2:fRisk==='warn'?1:0);
-    const ovClass = score>=3?'b-bad':score>=2?'b-warn':'b-ok';
-    const ovLabel = score>=3?'⚠️ Riesgo alto':score>=2?'⚡ Riesgo moderado':'✅ Riesgo bajo';
+    // Global: any 'bad' → bad; any 'warn' → warn; else ok
+    const hasHigh = aRisk === 'bad' || fRisk === 'bad';
+    const hasMod  = aRisk === 'warn' || fRisk === 'warn';
+    const ovClass = hasHigh ? 'b-bad' : hasMod ? 'b-warn' : 'b-ok';
+    const ovLabel = hasHigh && aRisk === 'bad' ? '⚠️ Riesgo alto · valgo frontal'
+                  : hasHigh ? '⚠️ Riesgo alto'
+                  : hasMod  ? '⚡ Riesgo moderado'
+                  : '✅ Riesgo bajo';
 
-    // Bar widths
-    const aW = Math.round((abd-140)/40*100);
-    const fW = Math.round((flx-60)/80*100);
+    // Bar widths (escala visual: abducción 150–185°, flexión 80–140°)
+    const aW = Math.round(Math.max(0, Math.min(100, (abd - 150) / 35 * 100)));
+    const fW = Math.round(Math.max(0, Math.min(100, (flx - 80)  / 60 * 100)));
 
     cont.innerHTML += `
     <div class="rc">
       <div class="rc-name">${name}</div>
       <div class="rm">
-        <div class="rm-lbl">Abducción en contacto (${abd.toFixed(1)}°)</div>
+        <div class="rm-lbl">Abducción frontal (${abd.toFixed(1)}°)</div>
         <div class="rm-track"><div class="rm-fill" style="width:${aW}%;background:${aColor}"></div></div>
         <span class="badge b-${aRisk}">${aLabel}</span>
       </div>
       <div class="rm">
-        <div class="rm-lbl">Flexión en excursión máx. (${flx.toFixed(1)}°)</div>
+        <div class="rm-lbl">Flexión máx. excursión (${flx.toFixed(1)}°)</div>
         <div class="rm-track"><div class="rm-fill" style="width:${fW}%;background:${fColor}"></div></div>
         <span class="badge b-${fRisk}">${fLabel}</span>
       </div>
